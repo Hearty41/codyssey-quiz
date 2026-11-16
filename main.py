@@ -1,4 +1,5 @@
 from quiz import Quiz
+from game import QuizGame
 
 
 def get_default_quizzes():
@@ -32,7 +33,6 @@ def get_default_quizzes():
 
 
 if __name__ == "__main__":
-    quizzes = get_default_quizzes()
-    print(f"총 {len(quizzes)}개의 마블 퀴즈가 준비되었습니다!")
-    for i, quiz in enumerate(quizzes, start=1):
-        quiz.display(i)
+    default_quizzes = get_default_quizzes()
+    game = QuizGame(default_quizzes)
+    game.run()
