@@ -34,5 +34,5 @@ def get_default_quizzes():
 
 if __name__ == "__main__":
     default_quizzes = get_default_quizzes()
-    game = QuizGame(default_quizzes)
+    game = QuizGame(default_quizzes)er
     game.run()
